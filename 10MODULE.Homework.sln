@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10MODULE.Homework", "10MODULE.Homework\10MODULE.Homework.csproj", "{02288DC7-5B09-41CC-ACC2-CF692F4C65D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module10.Homework", "10MODULE.Homework\Module10.Homework.csproj", "{02288DC7-5B09-41CC-ACC2-CF692F4C65D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
