@@ -144,7 +144,6 @@ namespace Module10.Homework
             Console.WriteLine($"{num1} {operation} {num2} = {result}");
         }
     }
-
     class Program
     {
         static void Main()
