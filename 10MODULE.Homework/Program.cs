@@ -8,30 +8,30 @@ namespace Module10.Homework
 {
     public interface ICalculateable
     {
-        double Add(double num1, double num2);
-        double Subtract(double num1, double num2);
-        double Multiply(double num1, double num2);
-        double Divide(double num1, double num2);
+        double Add(double a, double b);
+        double Subtract(double a, double b);
+        double Multiply(double a, double b);
+        double Divide(double a, double b);
     }
     public class Calculator : ICalculateable
     {
-        public double Add(double num1, double num2)
+        public double Add(double a, double b)
         {
-            return num1 + num2;
+            return a + b;
         }
-        public double Subtract(double num1, double num2)
+        public double Subtract(double a, double b)
         {
-            return num1 - num2;
+            return a - b;
         }
-        public double Multiply(double num1, double num2)
+        public double Multiply(double a, double b)
         {
-            return num1 * num2;
+            return a * b;
         }
-        public double Divide(double num1, double num2)
+        public double Divide(double a, double b)
         {
-            if (num2 != 0)
+            if (b != 0)
             {
-                return num1 / num2;
+                return a / b;
             }
             else
             {
@@ -42,30 +42,30 @@ namespace Module10.Homework
     }
     public class SimpleCalculator : ICalculateable
     {
-        public double Add(double num1, double num2)
+        public double Add(double a, double b)
         {
-            double result = num1 + num2;
-            PrintResult(num1, num2, "+", result);
+            double result = a + b;
+            PrintResult(a, b, "+", result);
             return result;
         }
-        public double Subtract(double num1, double num2)
+        public double Subtract(double a, double b)
         {
-            double result = num1 - num2;
-            PrintResult(num1, num2, "-", result);
+            double result = a - b;
+            PrintResult(a, b, "-", result);
             return result;
         }
-        public double Multiply(double num1, double num2)
+        public double Multiply(double a, double b)
         {
-            double result = num1 * num2;
-            PrintResult(num1, num2, "*", result);
+            double result = a * b;
+            PrintResult(a, b, "*", result);
             return result;
         }
-        public double Divide(double num1, double num2)
+        public double Divide(double a, double b)
         {
-            if (num2 != 0)
+            if (b != 0)
             {
-                double result = num1 / num2;
-                PrintResult(num1, num2, "/", result);
+                double result = a / b;
+                PrintResult(a, b, "/", result);
                 return result;
             }
             else
@@ -74,40 +74,40 @@ namespace Module10.Homework
                 return double.NaN; // NaN represents "Not a Number"
             }
         }
-        private void PrintResult(double num1, double num2, string operation, double result)
+        private void PrintResult(double a, double b, string operation, double result)
         {
-            Console.WriteLine($"{num1} {operation} {num2} = {result}");
+            Console.WriteLine($"{a} {operation} {b} = {result}");
         }
     }
     public class AdvancedCalculator : ICalculateable
     {
-        public double Add(double num1, double num2)
+        public double Add(double a, double b)
         {
-            double result = num1 + num2;
-            PrintResult(num1, num2, "+", result);
+            double result = a + b;
+            PrintResult(a, b, "+", result);
             return result;
         }
 
-        public double Subtract(double num1, double num2)
+        public double Subtract(double a, double b)
         {
-            double result = num1 - num2;
-            PrintResult(num1, num2, "-", result);
+            double result = a - b;
+            PrintResult(a, b, "-", result);
             return result;
         }
 
-        public double Multiply(double num1, double num2)
+        public double Multiply(double a, double b)
         {
-            double result = num1 * num2;
-            PrintResult(num1, num2, "*", result);
+            double result = a * b;
+            PrintResult(a, b, "*", result);
             return result;
         }
 
-        public double Divide(double num1, double num2)
+        public double Divide(double a, double b)
         {
-            if (num2 != 0)
+            if (b != 0)
             {
-                double result = num1 / num2;
-                PrintResult(num1, num2, "/", result);
+                double result = a / b;
+                PrintResult(a, b, "/", result);
                 return result;
             }
             else
@@ -139,9 +139,9 @@ namespace Module10.Homework
             }
         }
 
-        private void PrintResult(double num1, double num2, string operation, double result)
+        private void PrintResult(double a, double b, string operation, double result)
         {
-            Console.WriteLine($"{num1} {operation} {num2} = {result}");
+            Console.WriteLine($"{a} {operation} {b} = {result}");
         }
     }
     class Program

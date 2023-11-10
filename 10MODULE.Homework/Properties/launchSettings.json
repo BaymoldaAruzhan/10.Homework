@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "10MODULE.Homework": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable"
+    }
+  }
+}
